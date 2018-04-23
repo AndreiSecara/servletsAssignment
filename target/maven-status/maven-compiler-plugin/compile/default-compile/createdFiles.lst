@@ -1,0 +1,5 @@
+ro\mindit\todo\dao\TodoDAO.class
+ro\mindit\todo\main\TestMethods.class
+ro\mindit\todo\resource\TodoResource.class
+ro\mindit\todo\model\Todo.class
+ro\mindit\todo\util\Constants.class

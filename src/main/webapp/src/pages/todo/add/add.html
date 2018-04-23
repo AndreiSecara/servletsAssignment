@@ -1,0 +1,24 @@
+<div class="panel panel-info" ng-app="todoApp" ng-controller="TodoAddCtrl">
+    <div class="panel-heading "></div>
+        <div class="panel-body">
+            <form>
+                <fieldset>
+                    <legend>Add a new Todo:</legend>
+                    Todo id:<br>
+                    <input type="text" ng-model="data.id"/>
+                    <br>
+                    Todo name:<br>
+                    <input type="text" ng-model="data.name" required/>
+                    <br>
+                    Todo Owner:<br>
+                    <input type="text" ng-model="data.owner" required/>
+                    <br>
+                    Todo Priority:<br>
+                    <input type="text" ng-model="data.priority" required/>
+                    <br><br>
+                    <input type="button" value="Add Todo" ng-click="addTodo()" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

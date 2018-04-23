@@ -1,0 +1,23 @@
+<div class="panel panel-info" ng-app="todoApp" ng-controller="TodoUpdateCtrl">
+    <div class="panel-heading "></div>
+    <div class="panel-body">
+        <form>
+            <fieldset>
+                <legend>Update Todo:</legend>
+                Todo ID:<br>
+                <input type="text" ng-model="data.id" value="{{data.id}}" required/>
+                <br>
+                Todo name:<br>
+                <input type="text" ng-model="data.name" value="{{data.name}}" required/>
+                <br>
+                Todo Owner:<br>
+                <input type="text" ng-model="data.owner" value="{{data.owner}}" required/>
+                <br>
+                Todo Priority:<br>
+                <input type="text" ng-model="data.priority" value="{{data.priority}}" required/>
+                <br><br>
+                <input type="button" value="Update Todo" ng-click="updateTodo()" />
+            </fieldset>
+        </form>
+    </div>
+</div>

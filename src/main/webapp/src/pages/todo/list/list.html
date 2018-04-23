@@ -1,0 +1,25 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Todo List</h3>
+    </div>
+    <div>
+        <table class="table">
+            <tr>
+                <th>Todo ID</th>
+                <th>Todo Name</th>
+                <th>Todo Owner</th>
+                <th>Todo Priority</th>
+                <th>Options</th>
+            </tr>
+            <tr ng-repeat="todo in todos">
+                <td><a href="#/todoDetail/{{todo.id}}">{{todo.id}}</a></td>
+                <td><a href="#/todoDetail/{{todo.id}}">{{todo.name}}</a></td>
+                <td><a href="#/todoDetail/{{todo.id}}">{{todo.owner}}</a></td>
+                <td><a href="#/todoDetail/{{todo.id}}">{{todo.priority}}</a></td>
+                <td><a href="#/updateTodo/{{todo.id}}">Update</a> | <a href="#/deleteTodo/{{todo.id}}">Delete</a></td>
+            </tr>
+        </table>
+        <br>
+        <a href="#/addTodo">Add A New Todo</a>
+    </div>
+</div>
